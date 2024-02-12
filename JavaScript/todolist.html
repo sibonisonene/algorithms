@@ -9,6 +9,21 @@
     <h1>To-Do List</h1>
     <input type="text" id="list" placeholder="Add a task"></input>
     <button id="add-to-list">Add Activity</button>
-    <script type="text/javascript" src="todolist.js"></script>
+    <ul id="thelist" type="IV"></ul>
+
+    <script>
+        const list = document.getElementById("list");
+        const add = document.getElementById("add-to-list");
+        const actuallist = document.getElementById("thelist");
+
+        add.addEventListener("click", () =>{
+            var listNum = document.createElement("li")
+            listNum.textContent = list.value;
+            list.value ="";
+
+            document.getElementById("thelist").appendChild(listNum);
+
+})
+    </script>
 </body>
 </html>
