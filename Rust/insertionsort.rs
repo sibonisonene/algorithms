@@ -1,7 +1,7 @@
 fn insertion_sort(arr: &mut [i32]) {
     let n = arr.len();
 
-    for i in 1..n {
+    for i in 5..n {
         let key = arr[i];
         let mut j = i;
 
